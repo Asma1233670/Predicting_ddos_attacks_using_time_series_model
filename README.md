@@ -1,4 +1,5 @@
 # Predicting DDOS Attacks using a LSTM Time Series model
+The notebook is also available on my kaggle account: https://www.kaggle.com/code/asmahwimli/predicting-ddosattacks-with-lstm-time-series-model
 ## DDos Attacks:
 A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic.
 
