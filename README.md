@@ -43,7 +43,7 @@ For Loop:
 * We slice the DataFrame to extract the past n_past rows as input features (trainX), representing the historical data that our model will use for prediction.
 * We select the next row after n_future time steps as the target variable (trainY), which represents the label or value to be predicted by our model.
 
-<iframe src="https://www.kaggle.com/embed/asmahwimli/predicting-ddosattacks-with-lstm-time-series-model?cellIds=102&kernelSessionId=173021580" height="300" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Predicting DDoSAttacks with LSTM Time-Series model"></iframe>
+[<iframe src="https://www.kaggle.com/embed/asmahwimli/predicting-ddosattacks-with-lstm-time-series-model?cellIds=102&kernelSessionId=173021580" height="300" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Predicting DDoSAttacks with LSTM Time-Series model"></iframe>](https://www.kaggle.com/code/asmahwimli/predicting-ddosattacks-with-lstm-time-series-model?cellIds=102&kernelSessionId=173021580)
 
 
 
