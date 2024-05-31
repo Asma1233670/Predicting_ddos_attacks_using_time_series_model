@@ -33,6 +33,7 @@ In this phase, I did some data preprocessing steps including:
 * Correlation analysis: Since we have 84 columns, This is such an enormous correlation matrix, it will be hard from this to identify highly correlated features. I identified a threshold (absolute correlation > 0.9) to identify highly correlated features.
 * Feature Selection: Next, I proceeded to drop highly correlated columns to address multicollinearity issues and reduce redundancy in the dataset. I performed this step iteratively, considering different sets of features and their correlations with the target variable ('Label'). By carefully evaluating the correlation between each feature and the target variable, I aimed to retain the most informative and independent features while eliminating those that might introduce noise or redundancy into the model. This iterative process helped me refine the feature set and improve the predictive performance of the model.
 * Setting the time column `Timestamp` as in index: Since we will be working on a Time series model, the Timestamp column won't be considered as a feature but an index.
+* Label Encoding categorical features
 * Scaling numerical data: using a Z-score
 ## Preparing the data for the time series model:
 During this step, I'm setting up the data for training the model, specifically for a time series analysis task.
