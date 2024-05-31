@@ -43,8 +43,37 @@ For Loop:
 * We slice the DataFrame to extract the past n_past rows as input features (trainX), representing the historical data that our model will use for prediction.
 * We select the next row after n_future time steps as the target variable (trainY), which represents the label or value to be predicted by our model.
 
-[<iframe src="https://www.kaggle.com/embed/asmahwimli/predicting-ddosattacks-with-lstm-time-series-model?cellIds=102&kernelSessionId=173021580" height="300" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Predicting DDoSAttacks with LSTM Time-Series model"></iframe>](https://www.kaggle.com/code/asmahwimli/predicting-ddosattacks-with-lstm-time-series-model?cellIds=102&kernelSessionId=173021580)
+![code](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/d0ce266c-141e-4ef6-9ba2-1edd2f6f41f4)
 
+![code2](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/06d17c85-cb9c-41e7-9940-f2b55c554cb2)
+
+*The shapes of our training data arrays are as follows: trainX has a shape of (225735, 10, 34), indicating that we have 225,735 samples, each consisting of a sequence of 10 time steps, with 34 features for each time step. For each sample, the model will receive the past 10 observations, each containing information about various features.
+
+*On the other hand, trainY has a shape of (225735, 1), meaning that for each of these samples, the model will aim to predict a single binary outcome: whether the subsequent observation represents a DDOS attack or not. This setup allows the model to learn patterns in the historical data to make predictions about future DDOS attacks.
+
+## The LSTM model:
+I built a sequential model using LSTM neural networks for predicting DDoS attacks. The model structure is:
+* First LSTM layer: 128 units, returns complete sequences to capture dependencies at various time scales.
+* Second LSTM layer: 64 units, also returns complete sequences to capture complex temporal dependencies.
+* Third LSTM layer: 32 units, returns only the last output state, summarizing the sequence information into a single vector.
+* Dropout layer: Regularization with a dropout rate of 0.01 to prevent overfitting.
+* Dense layer: A single unit with sigmoid activation, typical for binary classification to predict the presence of a DDoS attack.
+![model_summary](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/f6109ac4-f57b-4d4a-be4c-8216021382c4)
+
+
+## Results:
+### Loss by epochs:
+![loss_by_epochs](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/289a1d38-8b7f-4458-bc5b-b9e2272687f6)
+![accuracy_by_epochs](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/2ae320de-b83d-4614-8473-f54e00374298)
+
+## Model evaluation: 
+I tried to evaluate the data on another dataset available here: https://github.com/neonithinar/Intrusion-detection-cicDDOS-dataset/tree/main
+
+This dataset presents different types of DDOS attacks, which will allow me to test how well the model is identifying these types as ddos attacks.
+![distribution_of_ddos_attacks2](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/6308bab2-e197-4a9d-aa12-8380f78daea3)
+
+Overall, it seems like the model achieved good performance with high accuracy, precision, recall, and F1 score on the test set, indicating that it's able to effectively detect various types of attacks.
+![evaluation](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/bf24c8f4-fb0e-4039-917e-ce3acc2a8728)
 
 
 
