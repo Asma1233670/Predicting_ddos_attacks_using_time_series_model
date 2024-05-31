@@ -4,7 +4,7 @@ A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt 
 
 From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, preventing regular traffic from arriving at its destination.
 
-![Uploading ddos_attack_traffic_metaphor.png…]()
+(https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/d82ff6d7-8894-4faf-8cff-17279ed0a3b4)
 
 ## How to identify a DDoS attack:
 The most obvious symptom of a DDoS attack is a site or service suddenly becoming slow or unavailable. But since a number of causes — such a legitimate spike in traffic — can create similar performance issues, further investigation is usually required. Traffic analytics tools can help you spot some of these telltale signs of a DDoS attack:
