@@ -62,10 +62,10 @@ I built a sequential model using LSTM neural networks for predicting DDoS attack
 ![model_summary](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/f6109ac4-f57b-4d4a-be4c-8216021382c4)
 
 
-## Results:
-### Loss by epochs:
-![loss_by_epochs](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/289a1d38-8b7f-4458-bc5b-b9e2272687f6)
-![accuracy_by_epochs](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/2ae320de-b83d-4614-8473-f54e00374298)
+## Training:
+![loss_by_epochs](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/ae169893-84b7-4140-8f6e-387a39b9d354)
+![accuracy_by_epochs](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/d59acd68-ddb0-467b-9ff0-f4d541f9069c)
+
 
 ## Model evaluation: 
 I tried to evaluate the data on another dataset available here: https://github.com/neonithinar/Intrusion-detection-cicDDOS-dataset/tree/main
