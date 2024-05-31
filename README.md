@@ -73,6 +73,8 @@ This dataset presents different types of DDOS attacks, which will allow me to te
 ![distribution_of_ddos_attacks2](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/6308bab2-e197-4a9d-aa12-8380f78daea3)
 
 Overall, it seems like the model achieved good performance with high accuracy, precision, recall, and F1 score on the test set, indicating that it's able to effectively detect various types of attacks.
+
+
 ![evaluation](https://github.com/Asma1233670/Predicting_ddos_attacks_using_time_series_model/assets/75503007/bf24c8f4-fb0e-4039-917e-ce3acc2a8728)
 
 
