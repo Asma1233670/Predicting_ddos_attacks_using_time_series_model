@@ -3,6 +3,7 @@
 A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic.
 
 From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, preventing regular traffic from arriving at its destination.
+
 ![Uploading ddos_attack_traffic_metaphor.png…]()
 
 ## How to identify a DDoS attack:
